@@ -19,7 +19,5 @@ from catchy import views
 
 urlpatterns = [
     url('admin/', admin.site.urls),
-    url(r'^$',views.index,name='index'),
-    url(r'^gallery/',include('catchy.urls')),
-    url(r'^gallery/',views.gallery,name='gallery')
+    url(r'',include('catchy.urls')),
 ]
