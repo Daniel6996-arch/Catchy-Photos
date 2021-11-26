@@ -11,4 +11,7 @@ def gallery(request):
     return render(request, 'gallery.html')   
 
 def photo(request):
-    return render(request, 'photo.html')               
+    return render(request, 'photo.html') 
+
+def search_results(request):
+    return render(request, 'search.html')                  
