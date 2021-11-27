@@ -5,11 +5,13 @@ from .models import Location, category, Image
 class ImageTestClass(TestCase):
 
     def setUp(self):
-        # Creating a new image and saving it
+        # Creating a new location
         self.nairobi= Location(location ='Nairobi')
+        self.nairobi.save_location()
 
 
         # Testing  instance
     def test_instance(self):
         self.assertTrue(isinstance(self.nairobi,Location))
+        self.assertTrue(len(nairobi) == 0) 
 

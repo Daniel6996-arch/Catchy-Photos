@@ -1,0 +1,11 @@
+#flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#img{
+    height: 25vh;
+}
+.card{
+    margin-left: 1vw;
+}

@@ -1,4 +1,6 @@
 from django.db import models
+from PIL import Image
+import PIL.Image as Image
 
 # Create your models here.
 class Location(models.Model):
@@ -21,14 +23,19 @@ class category(models.Model):
         ordering = ['category']       
 
 class Image(models.Model):
+    image = models.ImageField(upload_to = 'photos/', default='SOME STRING')
     image_name = models.CharField(max_length =60)
     description = models.TextField()
     location = models.ForeignKey(Location, on_delete=models.DO_NOTHING)
     category = models.ManyToManyField(category)
 
-    def __str__(self):
-        return self.image_name
+    
+    @classmethod
+    def search_by_category(cls,search_term):
+        photos = cls.objects.filter(category__icontains=search_term)
+        return photos
 
-    class Meta:
-        ordering = ['image_name']    
-        
+    @classmethod
+    def gallery(cls):
+        photos = cls.objects.all().order_by('location')           
+        return photos
