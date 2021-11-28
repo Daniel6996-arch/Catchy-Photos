@@ -19,6 +19,9 @@
 }
 /*"/static/img/sample.jpeg"*/
 #img01{
-    width: 70vw;
+    width: 60vw;
     height: 70vh;
+}
+#ex{
+    width: 30vw;
 }
