@@ -20,6 +20,10 @@
       <div class="col-sm-6 col-md-3" style="width: 30vw;">
           <a href="/photo/{{ photo.id }}/"><img src="{{ photo.image.url }}" style="width: 30vw; height: 50vh;"></a>
           <p>{{ photo.image_name }}</p>
+
+          {% for k in photo.category.all %}
+          <p>{{ photo.k }}</p>
+          {% endfor %}
       </div>
     {% endfor %}
   {% endif %}

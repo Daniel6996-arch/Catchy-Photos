@@ -27,7 +27,7 @@ class Image(models.Model):
     image_name = models.CharField(max_length =60)
     description = models.TextField()
     location = models.ForeignKey(Location, on_delete=models.DO_NOTHING)
-    category = models.ManyToManyField(category)
+    category = models.ManyToManyField(category , default = "No Category")
 
     
     @classmethod

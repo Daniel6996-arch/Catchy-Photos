@@ -18,7 +18,7 @@
             <p><span class="fst-italic">Name of the photo: </span>{{ photo.image_name }}</p>
             <p><span class="fst-italic">Location where taken: </span>{{ photo.location }}</p>
             <p><span class="fst-italic">A little about: </span>{{ photo.description }}</p>
-            <p><span class="fst-italic">Photo category: </span>{{ photo.category }}</p>
+            <p><span class="fst-italic">Photo category: </span>{{ photo.category.category }}</p>
             <p><span class="fst-italic">Link: </span>{{ request.get_full_path }}</p>
         </div>
     </div>
