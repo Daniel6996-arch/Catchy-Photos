@@ -39,3 +39,7 @@ class Image(models.Model):
     def gallery(cls):
         photos = cls.objects.all().order_by('location')           
         return photos
+
+    @classmethod
+    def click_photo(cls):
+        photo = cls.objects.filter(image_name)    

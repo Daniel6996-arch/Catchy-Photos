@@ -1,0 +1,20 @@
+#flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#img{
+    height: 25vh;
+}
+.card{
+    margin-left: 1vw;
+}
+#fle{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.nav-item{
+    margin-left: 5vw;
+}
+/*"/static/img/sample.jpeg"
