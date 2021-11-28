@@ -41,5 +41,6 @@ class Image(models.Model):
         return photos
 
     @classmethod
-    def click_photo(cls):
-        photo = cls.objects.filter(image_name)    
+    def click_photo(cls, id):
+        photo = cls.objects.filter(id = id)  
+        return photo  

@@ -12,8 +12,12 @@ def gallery(request):
     photos = Image.gallery()
     return render(request, 'gallery.html', {"photos":photos})   
 
-def photo(request):
-    return render(request, 'photo.html') 
+def photo(request, image_id):
+    try:
+        photo = Image.objects.get(id = image_id)
+    except ValueError:
+        raise Http404()
+    return render(request,"photo.html", {"photo":photo})
 
 def search(request):
 

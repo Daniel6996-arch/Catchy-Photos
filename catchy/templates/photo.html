@@ -3,16 +3,19 @@
 {% block content %}
 {{ block.super}}
 
-<div id="myModal" class="modal">
+<div id="myModal" class="">
+    <h1>Modal works</h1>
 
     <!-- The Close Button -->
     <span class="close">&times;</span>
   
     <!-- Modal Content (The Image) -->
-    <img class="modal-content" id="img01">
+    <img src="{{photo.image.url}}" class="modal-content" id="img01">
   
     <!-- Modal Caption (Image Text) -->
-    <div id="caption"></div>
+    <div>
+        <p>{{ photo.description }}</p>
+    </div>
 </div>
 
 {% endblock %}
