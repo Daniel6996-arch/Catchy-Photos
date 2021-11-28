@@ -4,10 +4,12 @@
 #### {This is an application of Catchy photos254 which shows different photos taken from different locations and by different people in many categories} {27/11/2021}
 #### Authored By **{Daniel6996-arch}**
 ## Behavior-Driven Development
-*The app should show my profile and my profile.    
-*The app should show github users and be able to search in them.    
-*The app should allow the user navigate between different pages.  
-*The user should be able to see my repositories.    
+###As a User I should:  
+*View different photos that interest me.  
+*Click on a single photo to expand it and also view the details of the photo. The photo details must appear on a modal within the same route as the main page.   
+*Search for different categories of photos. (ie. Travel, Food)   
+*Copy a link to the photo to share with my friends.   
+*View photos based on the location they were taken.  
 ## link
 https://daniel6996-arch.github.io/Github_search/
 ## Setup/Installation Requirements
