@@ -5,12 +5,11 @@
 
 <div id="flex">
     {% for photo in photos %}
-<div class="card" style="width: 18rem;">
+<div class="card" style="width: 25vw;">
     <a href="query/photo/{{ photo.id }}"><img src="{{ photo.image.url }}" class="img-responsive" alt="Image" id="img"></a>
     <div class="card-body">
-        <h3 class="text-center"> {{ photo.image_name }} </h3>
-        <p>{{ photo.location }}</p>
-        <p>{{ photo.category }}</p>
+        <h3 class="text-center height"> {{ photo.image_name }} </h3>
+        <p class="width">{{ photo.location }}</p>
     </div>
 </div>
 

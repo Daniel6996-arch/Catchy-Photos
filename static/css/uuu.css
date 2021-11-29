@@ -5,6 +5,7 @@
 }
 #img{
     height: 25vh;
+    width: 25vw;
 }
 .card{
     margin-left: 1vw;
@@ -27,4 +28,22 @@
 }
 .navbar-inverse{
     background-color: black;
+}
+.rem{
+    font-size: 1.5rem;
+}
+.fst-italic{
+    font-size: 1rem;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+.width{
+    height: 2vh;
+    display: flex;
+    align-items: flex-end;
+}
+.height{
+    height: 15vh;
 }
