@@ -25,3 +25,6 @@
 #ex{
     width: 30vw;
 }
+.navbar-inverse{
+    background-color: black;
+}
