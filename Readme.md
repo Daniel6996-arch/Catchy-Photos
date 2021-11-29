@@ -11,15 +11,16 @@
 *Copy a link to the photo to share with my friends.   
 *View photos based on the location they were taken.  
 ## link
-https://daniel6996-arch.github.io/Github_search/
+https://dantecatchyphotos254.herokuapp.com/
 ## Setup/Installation Requirements
-*This website best works on latest version browsers that support javascript.   
+*This website best works on latest version browsers that support python.   
 *Older browsers my work ineffectively.   
 *This website is dependency free therefore depends on NO other code or application.
 ## Technologies Used
-*Angular. 
-*Custom made CSS stylesheet.  
-*Bootstrap stylesheet.  
+*Python.   
+*Django.  
+*Custom made CSS stylesheet.    
+*Bootstrap stylesheet.    
 ## Support and contact details
 contact@danielnyutu@student.moringaschool.com
 ### License 
